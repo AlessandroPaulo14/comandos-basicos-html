@@ -5,118 +5,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo HTML</title>
+
+    <title>Aprenda HTML | Guia para Iniciantes</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- CABEÇALHO -->
     <header>
-        <h1>Aprendendo HTML</h1>
-        <p>Conheça os principais comandos da linguagem HTML</p>
+
+        <div class="logo">
+            <h1>HTML<span>.</span></h1>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre HTML</a>
+            <a href="#comandos">Comandos</a>
+            <a href="#importancia">Importância</a>
+        </nav>
+
     </header>
 
-    <!-- Menu -->
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#comandos">Comandos</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
 
-    <!-- Conteúdo principal -->
-    <main>
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <section class="inicio" id="inicio">
 
-        <!-- Introdução -->
-        <section id="inicio">
-            <h2>O que é HTML?</h2>
+        <div class="inicio-texto">
+
+            <p class="subtitulo">TECNOLOGIA E PROGRAMAÇÃO</p>
+
+            <h2>
+                Aprenda os primeiros passos
+                do <span>HTML</span>
+            </h2>
 
             <p>
-                HTML é uma linguagem utilizada para criar
-                e organizar o conteúdo de páginas da internet.
-                Com ela podemos adicionar textos, imagens,
-                títulos, links e muito mais.
+                Descubra os principais comandos do HTML
+                e aprenda como funciona a estrutura
+                das páginas da internet.
             </p>
 
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-                 alt="Computador com códigos de programação"
-                 class="imagem-principal">
-        </section>
+            <a href="#comandos" class="botao">
+                Conhecer comandos
+            </a>
 
-        <!-- Comandos -->
-        <section id="comandos">
+        </div>
 
-            <h2>Principais comandos HTML</h2>
+        <div class="inicio-imagem">
 
-            <div class="container">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                alt="Computador com programação">
 
-                <div class="card">
-                    <h3>&lt;h1&gt;</h3>
-                    <p>É utilizado para criar títulos principais.</p>
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE HTML -->
+    <main>
+
+        <section class="sobre" id="sobre">
+
+            <div class="titulo-secao">
+
+                <p class="subtitulo">CONHECENDO A LINGUAGEM</p>
+
+                <h2>O que é HTML?</h2>
+
+            </div>
+
+            <div class="sobre-conteudo">
+
+                <div class="sobre-texto">
+
+                    <p>
+                        HTML significa HyperText Markup Language,
+                        que em português significa Linguagem de
+                        Marcação de Hipertexto.
+                    </p>
+
+                    <p>
+                        É uma linguagem utilizada para criar
+                        a estrutura de páginas da internet,
+                        permitindo adicionar textos, imagens,
+                        links, títulos e outros elementos.
+                    </p>
+
+                    <p>
+                        O HTML é uma das principais ferramentas
+                        utilizadas no desenvolvimento de sites.
+                    </p>
+
                 </div>
 
-                <div class="card">
-                    <h3>&lt;p&gt;</h3>
-                    <p>É utilizado para escrever parágrafos e textos.</p>
-                </div>
+                <div class="sobre-imagem">
 
-                <div class="card">
-                    <h3>&lt;img&gt;</h3>
-                    <p>É utilizado para adicionar imagens à página.</p>
-                </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                        alt="Pessoa estudando tecnologia">
 
-                <div class="card">
-                    <h3>&lt;a&gt;</h3>
-                    <p>É utilizado para criar links para outras páginas.</p>
-                </div>
-
-                <div class="card">
-                    <h3>&lt;br&gt;</h3>
-                    <p>É utilizado para fazer uma quebra de linha.</p>
-                </div>
-
-                <div class="card">
-                    <h3>&lt;ul&gt;</h3>
-                    <p>É utilizado para criar listas sem numeração.</p>
-                </div>
-
-                <div class="card">
-                    <h3>&lt;ol&gt;</h3>
-                    <p>É utilizado para criar listas numeradas.</p>
-                </div>
-
-                <div class="card">
-                    <h3>&lt;button&gt;</h3>
-                    <p>É utilizado para criar botões.</p>
                 </div>
 
             </div>
 
         </section>
 
-        <!-- Sobre -->
-        <section id="sobre">
-            <h2>Por que aprender HTML?</h2>
+
+        <!-- COMANDOS HTML -->
+        <section class="comandos" id="comandos">
+
+            <div class="titulo-secao">
+
+                <p class="subtitulo">APRENDA NA PRÁTICA</p>
+
+                <h2>Principais comandos HTML</h2>
+
+                <p>
+                    Conheça algumas das tags mais utilizadas
+                    na criação de páginas da internet.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <!-- CARD 1 -->
+                <div class="card">
+
+                    <div class="card-numero">01</div>
+
+                    <h3>&lt;h1&gt;</h3>
+
+                    <p>
+                        Utilizado para criar títulos
+                        principais em uma página.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;h1&gt;Meu título&lt;/h1&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="card">
+
+                    <div class="card-numero">02</div>
+
+                    <h3>&lt;p&gt;</h3>
+
+                    <p>
+                        Utilizado para escrever
+                        parágrafos e textos.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;p&gt;Meu texto&lt;/p&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="card">
+
+                    <div class="card-numero">03</div>
+
+                    <h3>&lt;img&gt;</h3>
+
+                    <p>
+                        Permite adicionar imagens
+                        dentro de uma página.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;img src="foto.jpg"&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="card">
+
+                    <div class="card-numero">04</div>
+
+                    <h3>&lt;a&gt;</h3>
+
+                    <p>
+                        Utilizado para criar links
+                        para outras páginas.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;a href="#"&gt;Link&lt;/a&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 5 -->
+                <div class="card">
+
+                    <div class="card-numero">05</div>
+
+                    <h3>&lt;br&gt;</h3>
+
+                    <p>
+                        Utilizado para fazer
+                        uma quebra de linha.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;br&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="card">
+
+                    <div class="card-numero">06</div>
+
+                    <h3>&lt;ul&gt;</h3>
+
+                    <p>
+                        Cria listas sem numeração,
+                        utilizando marcadores.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;ul&gt;...&lt;/ul&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 7 -->
+                <div class="card">
+
+                    <div class="card-numero">07</div>
+
+                    <h3>&lt;ol&gt;</h3>
+
+                    <p>
+                        Cria listas organizadas
+                        com números.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;ol&gt;...&lt;/ol&gt;</code>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 8 -->
+                <div class="card">
+
+                    <div class="card-numero">08</div>
+
+                    <h3>&lt;button&gt;</h3>
+
+                    <p>
+                        Utilizado para criar
+                        botões interativos.
+                    </p>
+
+                    <div class="exemplo">
+                        <code>&lt;button&gt;Clique&lt;/button&gt;</code>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPORTÂNCIA DO HTML -->
+        <section class="importancia" id="importancia">
+
+            <div class="importancia-imagem">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                    alt="Equipe trabalhando com tecnologia">
+
+            </div>
+
+            <div class="importancia-texto">
+
+                <p class="subtitulo">SEU PRIMEIRO PASSO</p>
+
+                <h2>Por que aprender HTML?</h2>
+
+                <p>
+                    Aprender HTML é importante para quem
+                    deseja conhecer o desenvolvimento web.
+                </p>
+
+                <p>
+                    Com ele, é possível criar a estrutura
+                    de sites, organizar informações e
+                    apresentar conteúdos na internet.
+                </p>
+
+                <p>
+                    Junto com o CSS, o HTML permite
+                    desenvolver páginas bonitas,
+                    organizadas e funcionais.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSÃO -->
+        <section class="conclusao">
+
+            <h2>Agora você conhece o básico!</h2>
 
             <p>
-                Aprender HTML é o primeiro passo para
-                desenvolver sites. Ele permite organizar
-                as informações e construir a estrutura
-                de uma página da internet.
+                Esses são alguns dos principais comandos
+                utilizados no HTML. Continue praticando
+                e descubra novas possibilidades na programação.
             </p>
 
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-                 alt="Pessoa estudando programação"
-                 class="imagem-secundaria">
         </section>
 
     </main>
 
-    <!-- Rodapé -->
+
+    <!-- RODAPÉ -->
     <footer>
-        <p>Site desenvolvido para aprender HTML e CSS.</p>
-        <p>Todos os direitos reservados - 2026</p>
+
+        <h2>HTML<span>.</span></h2>
+
+        <p>
+            Aprendendo tecnologia, um código de cada vez.
+        </p>
+
+        <p class="direitos">
+            Desenvolvido para fins educativos • 2026
+        </p>
+
     </footer>
 
 </body>
+
 </html>
