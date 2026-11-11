@@ -1,41 +1,122 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Comandos Básicos de HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Comandos Básicos de HTML</h1>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Aprendendo HTML</h1>
+        <p>Conheça os principais comandos da linguagem HTML</p>
+    </header>
 
-    <p>HTML é uma linguagem usada para criar páginas da internet.</p>
+    <!-- Menu -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#comandos">Comandos</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
 
-    <h2>Principais comandos:</h2>
+    <!-- Conteúdo principal -->
+    <main>
 
-    <h3>1. Título</h3>
-    <p>O comando &lt;h1&gt; é usado para criar títulos.</p>
+        <!-- Introdução -->
+        <section id="inicio">
+            <h2>O que é HTML?</h2>
 
-    <h3>2. Parágrafo</h3>
-    <p>O comando &lt;p&gt; é usado para escrever textos.</p>
+            <p>
+                HTML é uma linguagem utilizada para criar
+                e organizar o conteúdo de páginas da internet.
+                Com ela podemos adicionar textos, imagens,
+                títulos, links e muito mais.
+            </p>
 
-    <h3>3. Imagem</h3>
-    <p>O comando &lt;img&gt; é usado para colocar imagens.</p>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                 alt="Computador com códigos de programação"
+                 class="imagem-principal">
+        </section>
 
-    <h3>4. Link</h3>
-    <p>O comando &lt;a&gt; é usado para criar links.</p>
+        <!-- Comandos -->
+        <section id="comandos">
 
-    <h3>5. Quebra de linha</h3>
-    <p>O comando &lt;br&gt; serve para pular uma linha.</p>
+            <h2>Principais comandos HTML</h2>
 
-    <h3>6. Lista</h3>
-    <p>O comando &lt;ul&gt; cria uma lista.</p>
+            <div class="container">
 
-    <h2>Conclusão</h2>
+                <div class="card">
+                    <h3>&lt;h1&gt;</h3>
+                    <p>É utilizado para criar títulos principais.</p>
+                </div>
 
-    <p>Esses são alguns dos comandos básicos de HTML.
-    Eles ajudam a criar e organizar páginas na internet.</p>
+                <div class="card">
+                    <h3>&lt;p&gt;</h3>
+                    <p>É utilizado para escrever parágrafos e textos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;img&gt;</h3>
+                    <p>É utilizado para adicionar imagens à página.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;a&gt;</h3>
+                    <p>É utilizado para criar links para outras páginas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;br&gt;</h3>
+                    <p>É utilizado para fazer uma quebra de linha.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;ul&gt;</h3>
+                    <p>É utilizado para criar listas sem numeração.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;ol&gt;</h3>
+                    <p>É utilizado para criar listas numeradas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>&lt;button&gt;</h3>
+                    <p>É utilizado para criar botões.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2>Por que aprender HTML?</h2>
+
+            <p>
+                Aprender HTML é o primeiro passo para
+                desenvolver sites. Ele permite organizar
+                as informações e construir a estrutura
+                de uma página da internet.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                 alt="Pessoa estudando programação"
+                 class="imagem-secundaria">
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Site desenvolvido para aprender HTML e CSS.</p>
+        <p>Todos os direitos reservados - 2026</p>
+    </footer>
 
 </body>
 </html>
